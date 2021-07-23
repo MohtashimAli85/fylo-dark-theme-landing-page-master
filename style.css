@@ -1,0 +1,31 @@
+:root {
+  /* Primary */
+  /* intro and email sign up background */
+  --darkBlue1: hsl(217, 28%, 15%);
+  /* main background */
+  --darkBlue2: hsl(218, 28%, 13%);
+  /* footer background */
+  --darkBlue3: hsl(216, 53%, 9%);
+  /* testimonials background */
+  --darkBlue4: hsl(219, 30%, 18%);
+
+  /* Accent */
+  /* inside call-to-action gradient */
+  --cyan: hsl(176, 68%, 64%);
+  /* inside call-to-action gradient */
+  --blue: hsl(198, 60%, 50%);
+  /* error */
+  --lightRed: hsl(0, 100%, 63%);
+  /* neutral */
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  /* font-size: 14px; */
+}
