@@ -82,16 +82,21 @@ header .summary {
   font-size: 0.93rem;
   margin: 15px 0 18px;
 }
-.btn {
+.btn,
+.accessCard #email {
   border-radius: 2rem;
   padding: 1rem 1.5rem;
-  color: var(--white);
-  font-weight: 700;
+
   border: none;
-  background-color: var(--blue);
+
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   width: 80%;
+}
+.btn {
+  background-color: var(--blue);
+  font-weight: 700;
+  color: var(--white);
 }
 
 main .blocks {
@@ -195,14 +200,12 @@ main .accessCard {
 .accessCard p {
   margin: 1rem 0;
 }
+.accessCard .btn,
 .accessCard #email {
-  border-radius: 2rem;
-  padding: 1rem 1.5rem;
-  /* color: var(--white); */
-  border: none;
-  font-family: "Raleway", sans-serif;
-  font-size: 1rem;
-  width: 80%;
+  width: 100%;
+}
+.accessCard #email {
+  margin-bottom: 1rem;
 }
 footer {
   background-color: var(--darkBlue3);
