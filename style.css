@@ -59,7 +59,8 @@ header .nav {
 ul {
   list-style-type: none;
 }
-ul li a {
+ul li a,
+a {
   text-decoration: none;
   color: var(--white);
 }
@@ -90,20 +91,20 @@ header .summary {
   background-color: var(--blue);
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-}
-header .btn {
   width: 80%;
 }
-main {
+
+main .blocks {
   text-align: center;
 }
 main .blocks .img {
   max-width: 88px;
+  margin-bottom: 2rem;
 }
-main .heading {
+main .blocks .heading {
   font-size: 1.3rem;
 }
-main .summary {
+main .blocks .summary {
   font-size: 1rem;
   margin: 1rem 0;
 }
@@ -113,8 +114,95 @@ main .block + .block {
 main .blockTwo {
   margin-top: 5rem;
 }
-.accessCard {
+main .featureSection .heading {
+  font-size: 1.2rem;
+  margin: 1.2rem 0;
+}
+main .featureSection .summary + .summary {
+  margin: 1.2rem 0;
+}
+main .link {
+  display: flex;
+  align-items: center;
+}
+main .link a {
+  color: var(--cyan);
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--cyan);
+}
+main .link .img {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+main .testimonials {
+  position: relative;
+}
+main .card1::before {
+  content: "";
+  background: url("images/bg-quotes.png") no-repeat;
+  background-size: 27.5px 22.5px;
+  position: absolute;
+  top: -18px;
+  left: 22px;
+  width: 55px;
+  height: 45px;
+}
+main .testimonials {
+  margin: 7rem 0;
+  padding: 0 1rem;
+}
+main .card {
+  background-color: var(--darkBlue4);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+main .card + .card {
+  margin-top: 1.2rem;
+}
+.card .summary {
+  font-size: 12.5px;
+  line-height: 20px;
+}
+main .card .profileInfo {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 0;
+}
+main .card .profileInfo .profile {
+  border-radius: 50%;
+  max-width: 50px;
+  margin-right: 10px;
+}
+.profileInfo h5 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.profileInfo p {
+  font-size: 10px;
+}
+main .accessCard {
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
   background-color: var(--darkBlue1);
+}
+.accessCard h5 {
+  font-size: 1.5rem;
+}
+.accessCard p {
+  margin: 1rem 0;
+}
+.accessCard #email {
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  /* color: var(--white); */
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  width: 80%;
 }
 footer {
   background-color: var(--darkBlue3);
