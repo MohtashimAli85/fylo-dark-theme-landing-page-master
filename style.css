@@ -33,7 +33,6 @@ body {
 }
 .container {
   padding: 1.5rem 1.2rem 0;
-  margin: 0 0 1.5rem;
 }
 .img {
   width: 100%;
@@ -52,7 +51,7 @@ header .nav {
   justify-content: space-between;
   align-items: center;
 }
-.logo {
+header .logo {
   max-width: 88px;
   max-height: 26px;
 }
@@ -101,6 +100,7 @@ header .summary {
 
 main .blocks {
   text-align: center;
+  margin: 3rem 0;
 }
 main .blocks .img {
   max-width: 88px;
@@ -118,6 +118,9 @@ main .block + .block {
 }
 main .blockTwo {
   margin-top: 5rem;
+}
+main .featureImg {
+  margin: 9.5rem 0 2.5rem;
 }
 main .featureSection .heading {
   font-size: 1.2rem;
@@ -137,6 +140,7 @@ main .link a {
   padding-bottom: 5px;
   border-bottom: 1px solid var(--cyan);
 }
+
 main .link .img {
   width: 25px;
   height: 25px;
@@ -197,18 +201,23 @@ main .card4 {
   justify-content: center;
 }
 main .accessCard {
+  -webkit-box-shadow: 6px 6px 5px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 6px 5px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 6px 5px -5px rgba(0, 0, 0, 0.75);
   position: absolute;
-  bottom: -12rem;
+  bottom: -11rem;
   padding: 2rem 1.5rem;
   border-radius: 10px;
   text-align: center;
   background-color: var(--darkBlue1);
 }
 .accessCard h5 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .accessCard p {
-  margin: 1rem 0;
+  margin: 1rem 0 1.5rem;
+  font-size: 14px;
+  line-height: 20px;
 }
 .accessCard .btn,
 .accessCard #email {
@@ -220,10 +229,14 @@ main .accessCard {
 footer {
   background-color: var(--darkBlue3);
   color: white;
-  padding-top: 9rem !important;
+  padding: 9rem 1.2rem 2rem !important;
 }
-footer .logo {
-  margin-bottom: 1rem;
+footer .logoDiv {
+  margin: 6rem 0 1rem;
+}
+footer .img {
+  width: 50%;
+  height: auto;
 }
 .info div {
   display: flex;
@@ -253,9 +266,15 @@ footer .logo {
   text-decoration: unset;
 }
 .links ul li a:hover {
-  color: var(--pink);
+  color: var(--cyan);
+}
+a:hover {
+  color: var(--cyan);
 }
 .links ul li + li {
+  margin: 1.5rem 0 0;
+}
+.links div + div {
   margin: 1.5rem 0 0;
 }
 .social ul {
@@ -268,7 +287,6 @@ footer .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
   width: 40px;
   height: 40px;
 }
@@ -276,7 +294,7 @@ footer .logo {
   margin-left: 1rem;
 }
 .social ul li:hover {
-  border: 1px solid var(--pink);
-  color: var(--pink);
+  border: 1px solid var(--cyan);
+  color: var(--cyan);
   cursor: pointer;
 }
