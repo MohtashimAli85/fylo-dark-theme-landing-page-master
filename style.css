@@ -52,7 +52,7 @@ header .nav {
   justify-content: space-between;
   align-items: center;
 }
-header .nav .logo {
+.logo {
   max-width: 88px;
   max-height: 26px;
 }
@@ -112,4 +112,70 @@ main .block + .block {
 }
 main .blockTwo {
   margin-top: 5rem;
+}
+.accessCard {
+  background-color: var(--darkBlue1);
+}
+footer {
+  background-color: var(--darkBlue3);
+  color: white;
+  padding-top: 9rem !important;
+}
+footer .logo {
+  margin-bottom: 1rem;
+}
+.info div {
+  display: flex;
+}
+.info div + div {
+  margin-top: 1.5rem;
+}
+.info div img {
+  width: auto;
+  height: 100%;
+  margin: 5px 20px 0 0;
+}
+.info div p,
+.links {
+  font-size: 1.1rem;
+  line-height: 30px;
+}
+.links {
+  margin: 3rem 0;
+}
+.links ul,
+.social ul {
+  list-style: none;
+}
+.links ul li a {
+  color: white;
+  text-decoration: unset;
+}
+.links ul li a:hover {
+  color: var(--pink);
+}
+.links ul li + li {
+  margin: 1.5rem 0 0;
+}
+.social ul {
+  display: flex;
+  justify-content: center;
+}
+.social ul li {
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.social ul li + li {
+  margin-left: 1rem;
+}
+.social ul li:hover {
+  border: 1px solid var(--pink);
+  color: var(--pink);
+  cursor: pointer;
 }
