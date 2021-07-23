@@ -28,4 +28,88 @@ body {
   font-family: "Open Sans", sans-serif;
   font-family: "Raleway", sans-serif;
   /* font-size: 14px; */
+  background-color: var(--darkBlue2);
+  color: var(--white);
+}
+.container {
+  padding: 1.5rem 1.2rem 0;
+  margin: 0 0 1.5rem;
+}
+.img {
+  width: 100%;
+  height: auto;
+}
+header {
+  background-color: var(--darkBlue1);
+  /* background: url("images/bg-curvy-mobile.svg") no-repeat bottom; */
+  background-image: url("images/bg-curvy-mobile.svg");
+  background-size: 140% 52%;
+  background-repeat: no-repeat;
+  background-position: top 40vh left -12vh;
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav .logo {
+  max-width: 88px;
+  max-height: 26px;
+}
+ul {
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+header .nav ul {
+  display: flex;
+  font-size: 14px;
+}
+header .nav ul li + li {
+  margin-left: 0.5rem;
+}
+header .bg-curve {
+  padding: 3rem 0.5rem;
+  text-align: center;
+}
+header .heading {
+  font-size: 1.5rem;
+}
+header .summary {
+  font-size: 0.93rem;
+  margin: 15px 0 18px;
+}
+.btn {
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  color: var(--white);
+  font-weight: 700;
+  border: none;
+  background-color: var(--blue);
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}
+header .btn {
+  width: 80%;
+}
+main {
+  text-align: center;
+}
+main .blocks .img {
+  max-width: 88px;
+}
+main .heading {
+  font-size: 1.3rem;
+}
+main .summary {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+main .block + .block {
+  margin-top: 5rem;
+}
+main .blockTwo {
+  margin-top: 5rem;
 }
