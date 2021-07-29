@@ -13,7 +13,7 @@
   /* inside call-to-action gradient */
   --cyan: hsl(176, 68%, 64%);
   /* inside call-to-action gradient */
-  --blue: hsl(198, 60%, 50%);
+  --blue: #339ecc;
   /* error */
   --lightRed: hsl(0, 100%, 63%);
   /* neutral */
@@ -95,6 +95,9 @@ header .summary {
   background-color: var(--blue);
   font-weight: 700;
   color: var(--white);
+}
+.btn:hover {
+  background-color: #2d87adec;
 }
 main {
   display: flex;
