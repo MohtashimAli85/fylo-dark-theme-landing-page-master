@@ -213,11 +213,12 @@ main .accessCard {
   -moz-box-shadow: 6px 6px 5px -5px rgba(0, 0, 0, 0.75);
   box-shadow: 6px 6px 5px -5px rgba(0, 0, 0, 0.75);
   position: absolute;
-  bottom: -11rem;
+  bottom: -10.5rem;
   padding: 2rem 1.5rem;
   border-radius: 10px;
   text-align: center;
   background-color: var(--darkBlue1);
+  min-width: 85vw;
 }
 .accessCard h5 {
   font-size: 1rem;
@@ -371,5 +372,19 @@ a:hover {
   }
   .card .summary {
     font-size: 16.3px;
+  }
+  main .accessCard {
+    min-width: 100vh;
+    bottom: -7.5rem;
+  }
+  .accessCard h5 {
+    font-size: 2rem;
+  }
+  .accessCard p {
+    padding: 0 5rem;
+  }
+  .accessCard #email {
+    max-width: 60%;
+    margin-right: 1rem;
   }
 }
