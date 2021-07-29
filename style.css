@@ -384,7 +384,7 @@ a:hover {
   }
   main .accessCard {
     min-width: 100vh;
-    bottom: -7.5rem;
+    /* bottom: -7.5rem; */
   }
   .accessCard h5 {
     font-size: 2rem;
