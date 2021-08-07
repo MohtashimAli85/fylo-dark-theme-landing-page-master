@@ -408,11 +408,6 @@ a:hover {
   .sub-container {
     display: flex;
   }
-  /* .info,
-  .social,
-  .links {
-    flex-basis: 33.33%;
-  } */
   .info {
     display: flex;
     flex-basis: 60%;
@@ -421,7 +416,6 @@ a:hover {
     margin: 0;
     margin-left: 2rem;
   }
-
   .social {
     flex-basis: 15%;
   }
