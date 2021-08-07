@@ -265,6 +265,11 @@ footer .logo {
   width: auto;
   height: 100%;
   margin: 5px 20px 0 0;
+  max-width: 20px;
+  max-height: 20px;
+}
+.column {
+  flex-direction: column;
 }
 .info div p,
 .links {
@@ -398,14 +403,30 @@ a:hover {
   }
   footer {
     padding: 3rem 4rem !important;
+    font-size: 14px;
   }
   .sub-container {
     display: flex;
   }
-  .info,
+  /* .info,
   .social,
   .links {
     flex-basis: 33.33%;
+  } */
+  .info {
+    display: flex;
+    flex-basis: 50%;
+  }
+  .info div + div {
+    margin: 0;
+    margin-left: 1.3rem;
+  }
+  .info div {
+    flex-basis: 50%;
+  }
+  .social,
+  .links {
+    flex-basis: 25%;
   }
   .links {
     margin: 0;
