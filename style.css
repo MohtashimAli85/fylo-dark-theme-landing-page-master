@@ -241,7 +241,7 @@ main .accessCard {
 footer {
   background-color: var(--darkBlue3);
   color: white;
-  padding: 9rem 4rem 2rem !important;
+  padding: 9rem 2rem 2rem !important;
 }
 footer .logoDiv {
   margin: 6rem 0 1rem;
@@ -258,9 +258,7 @@ footer .logo {
 .info div {
   display: flex;
 }
-.info div + div {
-  margin-top: 1.5rem;
-}
+
 .info div img {
   width: auto;
   height: 100%;
@@ -270,6 +268,7 @@ footer .logo {
 }
 .column {
   flex-direction: column;
+  margin-top: 1rem;
 }
 .info div p,
 .links {
@@ -296,9 +295,7 @@ a:hover {
 .links ul li + li {
   margin: 1.5rem 0 0;
 }
-.links div + div {
-  margin: 1.5rem 0 0;
-}
+
 .social ul {
   display: flex;
   justify-content: center;
@@ -319,6 +316,9 @@ a:hover {
   border: 1px solid var(--cyan);
   color: var(--cyan);
   cursor: pointer;
+}
+.row {
+  display: flex;
 }
 @media (min-width: 768px) {
   .container {
@@ -415,26 +415,30 @@ a:hover {
   } */
   .info {
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 60%;
   }
-  .info div + div {
+  .column {
     margin: 0;
-    margin-left: 1.3rem;
+    margin-left: 2rem;
   }
-  .info div {
-    flex-basis: 50%;
+
+  .social {
+    flex-basis: 15%;
   }
-  .social,
   .links {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
     flex-basis: 25%;
   }
-  .links {
-    margin: 0;
+  .links div {
+    /* flex-basis: 30%; */
+    display: flex;
   }
   .links ul {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    flex-basis: 100%;
   }
   .links ul li + li {
     margin: 0;
